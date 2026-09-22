@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+        <title>Ziua Mondiala a Inimii</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="home">
+            <p class="eyebrow">29 SEPTEMBRIE • ZIUA MONDIALA A INIMII</p>
+            <h1>Sanatatea inimii
+            <span>Intre perceptii si mituri</span>
+            </h1>
+            <p class="intro">
+                Cat de multe dintre lucrurile pe care le credeam despre inima sunt cu adevarat reale?
+            </p>
+            <div class="heart">
+                <img src="inima.png" alt="inima">
+            </div>
+            <a href="#Descopera" class="start-button">
+                Descopera
+            </a>
+        </main>
+        <section class="about" id="Descopera">
+            <p class="section-label">01 • INIMA</p>
+            <h2>Un organ mic. <span>O munca uriasa.</span></h2>
+            <p class="about-text">Inima este un organ muscular care pompeaza sangele in intregul organism, aigurand transportul oxigenului si al substantelor nutritive catre celule.</p>
+            <div class="heart-facts">
+                <div class="fact">
+                    <span>01</span>
+                    <h3>Pompeaza</h3>
+                    <p>Inima impinge sangele prin intregul organism.</p>
+                </div>
+                <div class="fact">
+                    <span>02</span>
+                    <h3>Are 4 camere</h3>
+                    <p>Doua atrii si doua ventricule lucreaza impreuna.</p>
+                </div>
+                <div class="fact">
+                    <span>03</span>
+                    <h3>Lucreaza continuu</h3>
+                    <p>Inima bate zi si noapte, fara pauze volundare.</p>
+                </div>
+                <div class="fact">
+                    <span>04</span>
+                    <h3>Este un muschi</h3>
+                    <p>Miocardul este tesutul muscular care produce contractiile inimii.</p>
+                </div>
+                <div class="did-you-know">
+                    <button onclick="showFact()">Stiai ca?</button>
+                    <p id="extra-fact">Apasa pentru a descoperi un fapt interesant despre inima.</p>
+                </div>
+            </div>
+        </section>
+        <section class="myths" id="mituri">
+            <p class="section-label">02 • MITURI</p>
+            <h2> Cat de bine iti <span>cunosti inima?</span></h2>
+            <p class="myths-intro">Unele lucruri despre inima par evidente, dat cat de multe sunt cu adevarat reale?</p>
+            <div class="myth">
+                <span>01</span>
+                <div class="myth-content">
+                    <p>Cand suferim din dragoste, inima chiar se poate rupe.</p>
+                    <button onclick="showMyth(this, false)">
+                        Afla raspunsul
+                    </button>
+                    <p class="myth-answer"></p>
+                </div>
+            </div>
+            <div class="myth">
+                <span>02</span>
+                <div class="myth-content">
+                    <p>Inima se afla in partea stanga a pieptului.</p>
+                    <button onclick="showMyth(this, false)">
+                        Afla raspunsul
+                    </button>
+                    <p class="myth-answer"></p>
+                </div>
+            </div>
+            <div class="myth">
+                <span>03</span>
+                <div class="myth-content">
+                    <p>Inima se opreste cand stranuti.</p>
+                    <button onclick="showMyth(this, false)">
+                        Afla raspunsul
+                    </button>
+                    <p class="myth-answer"></p>
+                </div>
+            </div>
+            <div class="myth">
+                <span>04</span>
+                <div class="myth-content">
+                    <p>Oamenii folosesc numai o parte a inimii.</p>
+                    <button onclick="showMyth(this, false)">
+                        Afla raspunsul
+                    </button>
+                    <p class="myth-answer"></p>
+                </div>
+            </div>
+            <div class="myth">
+                <span>05</span>
+                <div class="myth-content">
+                    <p>Sangele din vene este albastru.</p>
+                    <button onclick="showMyth(this, false)">
+                        Afla raspunsul
+                    </button>
+                    <p class="myth-answer"></p>
+                </div>
+            </div>
+        </section>
+        <section class="health">
+            <p class="section-label">03 · SANATATEA INIMII</p>
+            <h2>
+                Inima nu cere
+                <span>perfectiune.</span>
+            </h2>
+            <p class="health-intro">
+                Obiceiurile de zi cu zi pot influenta sanatatea inimii.
+                Unele schimbari mici pot conta mai mult decat crezi.
+            </p>
+            <div class="health-factors">
+                <div class="health-card" onclick="showHealth(this, 1)">
+                    <span>01</span>
+                    <h3>Miscarea</h3>
+                    <p>
+                        Activitatea fizica ajuta inima si circulatia sangelui.
+                    </p>
+                    <p class="health-answer"></p>
+                </div>
+                <div class="health-card" onclick="showHealth(this, 2)">
+                    <span>02</span>
+                    <h3>Alimentatia</h3>
+                    <p>
+                        O alimentatie echilibrata contribuie la sanatatea cardiovasculara.
+                    </p>
+                    <p class="health-answer"></p>
+                </div>
+                <div class="health-card" onclick="showHealth(this, 3)">
+                    <span>03</span>
+                    <h3>Somnul</h3>
+                    <p>
+                        Odihna este importanta pentru buna functionare a organismului.
+                    </p>
+                    <p class="health-answer"></p>
+                </div>
+                <div class="health-card" onclick="showHealth(this, 4)">
+                    <span>04</span>
+                    <h3>Stresul</h3>
+                    <p>
+                        Gestionarea stresului poate sustine sanatatea inimii.
+                    </p>
+                    <p class="health-answer"></p>
+                </div>
+            </div>
+        </section>
+        <section class="heart-check">
+            <p class="section-label">04 · HEART CHECK</p>
+            <h2>
+                Cat de bine
+                <span>ai grija de inima ta?</span>
+            </h2>
+            <p class="check-intro">
+                Raspunde sincer la cateva intrebari si descopera cat de sanatoase
+                sunt obiceiurile tale de zi cu zi.
+            </p>
+            <div class="check-question">
+                <span>01</span>
+                <h3>Cat de des faci miscare?</h3>
+                <div class="check-options">
+                    <button onclick="chooseAnswer(1, 2, this)">
+                        Des
+                    </button>
+                    <button onclick="chooseAnswer(1, 1, this)">
+                        Uneori
+                    </button>
+                    <button onclick="chooseAnswer(1, 0, this)">
+                        Rar
+                    </button>
+                </div>
+            </div>  
+            <div class="check-question">
+                <span>02</span>
+                <h3>Cum ai descrie alimentatia ta?</h3>
+                <div class="check-options">
+                    <button onclick="chooseAnswer(2, 2, this)">
+                        Echilibrata
+                    </button>
+                    <button onclick="chooseAnswer(2, 1, this)">
+                        Uneori sanatoasa
+                    </button>
+                    <button onclick="chooseAnswer(2, 0, this)">
+                        Dezechilibrata
+                    </button>
+                </div>
+            </div>
+            <div class="check-question">
+                <span>03</span>
+                <h3>Cat de bine dormi in mod normal?</h3>
+                <div class="check-options">
+                    <button onclick="chooseAnswer(3, 2, this)">
+                        7-9 ore
+                    </button>
+                    <button onclick="chooseAnswer(3, 1, this)">
+                        Uneori suficient
+                    </button>
+                    <button onclick="chooseAnswer(3, 0, this)">
+                        Prea putin
+                    </button>
+                </div>
+            </div>
+            <div class="check-question">
+                <span>04</span>
+                <h3>Cum iti gestionezi stresul?</h3>
+                <div class="check-options">
+                    <button onclick="chooseAnswer(4, 2, this)">
+                        Foarte bine
+                    </button>
+                    <button onclick="chooseAnswer(4, 1, this)">
+                        Destul de bine
+                    </button>
+                    <button onclick="chooseAnswer(4, 0, this)">
+                        Cu dificultate
+                    </button>
+                </div>
+            </div>
+            <button class="check-result-button" onclick="showResult()">
+                Vezi rezultatul
+            </button>
+
+            <p class="check-result" id="check-result"></p>  
+        </section>
+        <section class="world-heart">
+            <p class="section-label">05 · 29 SEPTEMBRIE</p>
+            <h2>
+                O zi pentru
+                <span>o inima mai sanatoasa.</span>
+            </h2>
+            <p class="world-heart-text">
+                Ziua Mondiala a Inimii este marcata in fiecare an pe 29 septembrie
+                si atrage atentia asupra importantei sanatatii cardiovasculare.
+            </p>
+            <div class="world-heart-fact">
+                <span>STIAI CA?</span>
+                <p>
+                    Sanatatea inimii tine nu doar de ceea ce faci astazi,
+                    ci si de obiceiurile pe care le construiesti in timp.
+                </p>
+            </div>
+        </section>
+        <section class="sources">
+            <p class="section-label">06 · SURSE</p>
+            <h2>
+                Informatia corecta
+                <span>conteaza.</span>
+            </h2>
+            <p class="sources-intro">
+                Informatiile prezentate pe aceasta pagina se bazeaza pe surse medicale
+                si organizatii internationale.
+            </p>
+            <div class="source-list">
+                <div class="source">
+                    <span>01</span>
+                    <p>World Health Organization - cardiovascular diseases</p>
+                </div>
+                <div class="source">
+                    <span>02</span>
+                    <p>World Heart Federation - World Heart Day</p>
+                </div>
+                <div class="source">
+                    <span>03</span>
+                    <p>American Heart Association - heart health</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            function showFact() {
+                document.getElementById("extra-fact").textContent = "Intr-o zi, inima unul adult poate bate de aproximativ 100.000 de ori.";
+            }
+            function showMyth(button, isTrue) {
+                const answer = button.parentElement.querySelector(".myth-answer");
+                if (isTrue) {
+                    button.textContent = "ADEVAR✔";
+                }
+                else {
+                    button.textContent = "MIT✘";
+                }
+                const myth = button.parentElement.parentElement.querySelector("span").textContent;
+                if (myth === "01") {
+                answer.textContent = "Mit ✘- Exista o afectiune numita sindromul inimii frante, in care un stres emotional puternic poate afecta temporar functionalitatea inimii. Nu inseamna ca inima se rupe fizic.";
+                }
+                if (myth === "02") {
+                    answer.textContent = "Mit ✘- Inima se afla in principal in centrul toracelui, intre plamani, dar este usor orientata spre stanga. De aceea, bataile sunt adesea percepute mai puternic in partea stanga.";
+                }
+                if (myth === "03") {
+                    answer.textContent = "Mit ✘- Ritmul inimii se poate modifica in timpul stranutului din cauza schimbarilor de presiune din torace, dar inima nu se opreste.";
+                }
+                if (myth === "04") {
+                    answer.textContent = "Mit ✘- Cele 4 camere ale inimii au roluri diferite si lucreaza impreuna pentru a pompa sangele prin organism.";
+                }
+                if (myth === "05") {
+                    answer.textContent = "Mit ✘- Sangele este intotdeauna rosu. Sangele cu mai putin oxigen este rosu inchis, iar prin piele venele pot parea albastre din cauza modului in care lumina este absorbita si reflectata.";
+                }
+                answer.classList.add("show");
+                button.disabled = true;
+            }
+            function showHealth(card, number) {
+                const answer = card.querySelector(".health-answer");
+                if (number === 1) {
+                    answer.textContent =
+                        "Miscarea regulata poate ajuta la mentinerea unei inimi sanatoase si la imbunatatirea circulatiei.";
+                }
+                if (number === 2) {
+                    answer.textContent =
+                        "O alimentatie echilibrata poate contribui la mentinerea unei tensiuni arteriale si a unui nivel sanatos al colesterolului.";
+                }
+                if (number === 3) {
+                    answer.textContent =
+                        "Somnul insuficient poate afecta organismul, iar un program regulat de odihna sustine sanatatea generala.";
+                }
+                if (number === 4) {
+                    answer.textContent =
+                        "Stresul prelungit poate influenta tensiunea arteriala si alte procese din organism.";
+                }
+                answer.classList.add("show");
+            }
+            let healthScore = 0;
+            let answeredQuestions = 0;
+            function chooseAnswer(question, points, button) {
+                const questionBox = button.parentElement.parentElement;
+                const buttons = questionBox.querySelectorAll("button");
+                buttons.forEach(function(btn) {
+                    btn.classList.remove("selected");
+                });
+                button.classList.add("selected");
+                healthScore -= questionBox.dataset.points || 0;
+                healthScore += points;
+                questionBox.dataset.points = points;
+                if (!questionBox.dataset.answered) {
+                    answeredQuestions++;
+                    questionBox.dataset.answered = "true";
+                }
+            }
+            function showResult() {
+                const result = document.getElementById("check-result");
+                if (answeredQuestions < 4) {
+                    result.textContent =
+                        "Raspunde la toate cele 4 intrebari pentru a vedea rezultatul.";
+                    return;
+                }
+                if (healthScore >= 7) {
+                    result.textContent =
+                        "Obiceiurile tale includ mai multe elemente care pot sustine sanatatea inimii. Continua sa ai grija de tine!";
+                } else if (healthScore >= 4) {
+                    result.textContent =
+                        "Ai cateva obiceiuri bune, dar exista si loc pentru mici schimbari care pot sustine sanatatea inimii.";
+                } else {
+                    result.textContent =
+                        "Acest rezultat poate fi un semnal sa acorzi mai multa atentie obiceiurilor care influenteaza sanatatea inimii.";
+                }
+            }
+        </script>
+    </body>
+</html>
